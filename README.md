@@ -24,7 +24,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- Display grid approach
+- Display grid
 - Mobile-first workflow
 
 ## Author
