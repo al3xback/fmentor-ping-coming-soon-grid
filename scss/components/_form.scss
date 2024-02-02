@@ -14,11 +14,27 @@
 .form__control {
 	padding: func.em(10, var.$font-size-primary)
 		func.em(24, var.$font-size-primary);
-	border: 2px solid var.$color-pale-blue;
+	border: 1px solid var.$color-gray-light;
 	border-radius: 25px;
 	outline: none;
 	font-size: 1em;
 	color: inherit;
+}
+
+.form__control::-webkit-input-placeholder {
+	color: var.$color-gray-light;
+}
+
+.form__control:-ms-input-placeholder {
+	color: var.$color-gray-light;
+}
+
+.form__control::-ms-input-placeholder {
+	color: var.$color-gray-light;
+}
+
+.form__control::placeholder {
+	color: var.$color-gray-light;
 }
 
 .form__control.invalid,
@@ -37,6 +53,7 @@
 @media (min-width: 48em) {
 	.form__group {
 		position: relative;
+		grid-template-columns: 1fr auto;
 		gap: func.em(16);
 	}
 
